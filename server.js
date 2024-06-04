@@ -25,6 +25,7 @@ app.get('/frutas', async (req,res) =>{
     try {
         const db = client.db('frutas')
         const frutas = await db.collection('frutas').find().toArray()
+
         res.json(frutas)
         
     } catch (error) {
