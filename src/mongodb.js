@@ -1,4 +1,5 @@
-process.loadEnvFile() //cargamos las variables de entorno desde el .env
+require('dotenv').config(); 
+
 
 const { MongoClient } = require('mongodb')
 
